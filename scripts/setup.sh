@@ -37,5 +37,6 @@ kubectl rollout status deployment/argocd-server \
 
 # Deploy the application when ready.
 kubectl apply -f confs/application.yaml
+echo "==============argocd-app"=======================================
 
 echo "Cluster and Argo CD bootstrap complete."
