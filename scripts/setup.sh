@@ -8,7 +8,7 @@ cd "$(dirname "$0")/.."
 if ! k3d cluster list -o json 2>/dev/null \
   | grep -q '"name":"yakazdao"'; then
   k3d cluster create yakazdao \
-    -p "8888:8888@loadbalancer"
+    -p "8889:30888@loadbalancer"
 fi
 
 # Write the kubeconfig where kubectl looks by default, so plain

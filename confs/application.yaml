@@ -11,7 +11,7 @@ spec:
   source:
     repoURL: https://github.com/Younes-AK/argocd.git
     targetRevision: HEAD
-    path: confs/manifests
+    path: ./confs/manifests
   destination:
     server: https://kubernetes.default.svc
     namespace: dev
