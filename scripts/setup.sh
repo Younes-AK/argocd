@@ -36,7 +36,7 @@ kubectl rollout status deployment/argocd-server \
   -n argocd --timeout=600s
 
 # Deploy the application when ready.
-kubectl apply -f /Vagrant/IOT/p3/confs/application.yaml
+kubectl apply -f /vagrant/IOT/p3/confs/application.yaml
 echo "==============argocd-app"=======================================
 
 echo "Cluster and Argo CD bootstrap complete."
